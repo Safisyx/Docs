@@ -82,7 +82,7 @@ So, why not.
   Basically, it means that nodemon will watch for **ts** file changes in the **src** folder to trigger the restart, except the files ending with **.test.ts** or **.spec.ts** which are normally reserved for test files. Nodemon will execute the command `npm run debug` everytime it is restarting. The last bit `"inspect": true` will allow inspecting with VSCode.
 
 - In **VSCode**, add a debug configuration, replace the default with the following
-  ```json
+  ```js
   {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
