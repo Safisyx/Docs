@@ -182,7 +182,7 @@ I will be using Airbnb code style without semicolon but feel free to use whateve
       "semi": ["error", "never"],
       "no-console": [0, "allow"],
       "quotes": [1, "single"],
-      "import/no-extraneous-dependencies": [2, {"devDependencies": true}]
+      "array-bracket-newline": [1, "consistent"]
     }
   }
   ```
@@ -197,8 +197,8 @@ I will be using Airbnb code style without semicolon but feel free to use whateve
 - We also need a **.eslintignore** in the root folder and write **dist** into it so that ESLint does not take into account the produced javascript.
 - Add more scripts in the _package.json_
   ```json
-  "lint": "eslint src/*",
-  "lint:fix": "eslint src/* --fix",
+  "lint": "eslint src . --ext .ts",
+  "lint:fix": "eslint src . --ext .ts --fix"
   ```
   `lint` is to check for problems and `lint:fix` is to fix what ESLint can fix automatically.
 
