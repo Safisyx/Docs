@@ -203,7 +203,7 @@ I will be using Airbnb code style without semicolon but feel free to use whateve
   `lint` is to check for problems and `lint:fix` is to fix what ESLint can fix automatically.
 
 That is enough but to make it more fun, we have one more step
-- Install ESLint extension in VSCode, this will allow us to auto-fix on save. Add the following in the workspace _settings.json_ (can be done by creating the file inside the **.vscode** folder)
+- Install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) in VSCode, this will allow us to auto-fix on save. Add the following in the workspace _settings.json_ (can be done by creating the file inside the **.vscode** folder)
   ```json
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
@@ -216,6 +216,8 @@ That is enough but to make it more fun, we have one more step
   >"editor.tabSize": 2,
   >"editor.insertSpaces": true,
   >"editor.detectIndentation": false,
+  >"files.eol": "\n"
   >```
+  >**`"files.eol": "\n"`** is to use LF line ending in VSCode, default for Windows is CRLF
 
 Now we are completely ready!!!
