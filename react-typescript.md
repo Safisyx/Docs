@@ -67,8 +67,8 @@ ESlint and all necessary modules to lint TypeScript are already installed.
   ```
 - Add the following scripts in the **package.json**
   ```json
-  "lint": "eslint src . --ext .ts",
-  "lint:fix": "eslint src . --ext .ts --fix"
+  "lint": "eslint src . --ext .tsx --ext .ts",
+  "lint:fix": "eslint src . --ext .tsx --ext .ts --fix"
   ```
   `lint` is to check for problems and `lint:fix` is to fix what ESLint can fix automatically.
 
