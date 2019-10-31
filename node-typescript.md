@@ -178,7 +178,6 @@ I will be using Airbnb code style without semicolon but feel free to use whateve
       "@typescript-eslint"
     ],
     "rules": {
-      "linebreak-style": ["error", "windows"],
       "semi": ["error", "never"],
       "no-console": [0, "allow"],
       "quotes": [1, "single"],
